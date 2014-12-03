@@ -1,6 +1,9 @@
 Wegrow::Application.routes.draw do
-  root :to => 'pages#home'
-  get "pages/home"
+  resources :leads
+
+  root :to => 'leads#new'
+  get 'home' => "pages#home"
+  get 'how' => "pages#howitworks"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

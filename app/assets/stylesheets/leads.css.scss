@@ -1,0 +1,52 @@
+// Place all the styles related to the Leads controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.leads-modal {
+	width: 100%;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+.lead-form {
+	font-family: lato;
+	text-align: center;
+	resize: none;
+	font-size: 18px;
+	width: 70%;
+	padding: 10px;
+	border: 1px solid #A9A9A9;
+}
+
+.lead-form:focus {
+    outline: none !important;
+    border:1px solid #6caff1;
+    box-shadow: 0 0 10px #6caff1;
+}
+
+/*http://stackoverflow.com/questions/23584120/create-a-line-separator-using-only-css*/
+.divider{
+    color:#ccc;
+    width:70%;
+    margin:20px auto;
+    overflow:hidden;
+    text-align:center;   
+    line-height:1.2em;
+}
+
+.divider:before, .divider:after{
+    content:"";
+    vertical-align:top;
+    display:inline-block;
+    width:50%;
+    height:0.65em;
+    border-bottom:1px solid #ccc;
+    margin:0 2% 0 -55%;
+}
+.divider:after{
+    margin:0 -55% 0 2%;
+}
+
+.lead-association {
+	font-family: lato;
+}

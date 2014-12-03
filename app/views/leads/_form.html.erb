@@ -1,0 +1,24 @@
+<h4 style="font-family: lato; margin: -10px 0px 0px 0px">Get started by entering your email. You can also enter the people you want to get feedback from on your team or in your organization.</h4>  
+<br>
+<%= simple_form_for(@lead, html: { class: "form-horizontal"}) do |f| %>
+<table>
+  <tr>
+    <%= f.text_area :email, placeholder: "Your work email", class: "lead-form", :autocomplete => :off, :rows => 1 %>
+  </tr>
+  <tr>
+    <%= f.text_area :name, placeholder: "Your name", class: "lead-form", :autocomplete => :off, :rows => 1 %>
+  </tr>
+  <div class="divider">Your team (optional)</div>
+  <tr>
+    <%= f.text_area :email_1, placeholder: "Manager's Email", class: "lead-form", :autocomplete => :off, :rows => 1 %>
+  </tr>
+  <tr>
+    <%= f.text_area :email_2, placeholder: "Peer #1 Email", class: "lead-form", :autocomplete => :off, :rows => 1 %>
+  </tr>
+  <tr>
+    <%= f.text_area :email_3, placeholder: "Peer #2 Email", class: "lead-form", :autocomplete => :off, :rows => 1 %>
+  </tr>
+</table>
+<%= f.submit "Get started", class: "home-button", id: "lead-submit" %>
+
+<% end %>
